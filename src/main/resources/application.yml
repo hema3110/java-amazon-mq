@@ -1,0 +1,11 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+    import: "aws-secretsmanager:JavaAmazonMQApplication"
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+    import: "aws-secretsmanager:JavaAmazonMQApplication"
